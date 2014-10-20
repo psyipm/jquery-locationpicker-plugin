@@ -28,6 +28,31 @@ $('#somecomponent').locationpicker();
 </script>
 ```
 
+Available options
+--------------------------
+
+```
+        location: {latitude: 40.7324319, longitude: -73.82480799999996},
+        locationName: "",
+        radius: 500,
+        zoom: 15,
+        scrollwheel: true,
+        inputBinding: {
+            latitudeInput: null,
+            longitudeInput: null,
+            radiusInput: null,
+            locationNameInput: null
+        },
+        enableAutocomplete: false,
+        enableReverseGeocode: true,
+        markerTitle: "Drag Me",
+        markerDraggable: true,
+        draggable: true,
+        onchanged: function(currentLocation, radius, isMarkerDropped) {},
+        onlocationnotfound: function(locationName) {},
+        oninitialized: function (component) {}
+```
+
 Documentation and Examples
 --------------------------
 

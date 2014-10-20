@@ -137,8 +137,8 @@ function FullScreenControl(map) {
         var _marker = new google.maps.Marker({
             position: new google.maps.LatLng(54.19335, -3.92695),
             map: _map,
-            title: "Drag Me",
-            draggable: options.draggable
+            title: options.markerTitle,
+            draggable: options.markerDraggable
         });
         return {
             map: _map,
@@ -363,7 +363,6 @@ function FullScreenControl(map) {
             // Defaults
             var settings = $.extend({}, $.fn.locationpicker.defaults, options );
             // Initialize
-            console.log(settings);
             var gmapContext = new GMapContext(this, {
                 zoom: settings.zoom,
                 center: new google.maps.LatLng(settings.location.latitude, settings.location.longitude),
@@ -408,6 +407,8 @@ function FullScreenControl(map) {
         },
         enableAutocomplete: false,
         enableReverseGeocode: true,
+        markerTitle: "Drag Me",
+        markerDraggable: true,
         draggable: true,
         onchanged: function(currentLocation, radius, isMarkerDropped) {},
         onlocationnotfound: function(locationName) {},
