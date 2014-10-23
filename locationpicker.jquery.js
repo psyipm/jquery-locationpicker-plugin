@@ -1,3 +1,5 @@
+//https://github.com/psyipm/jquery-locationpicker-plugin
+
 /**
  * Original script from http://www.doogal.co.uk/FullScreen.php
  * @param {type} map
@@ -374,7 +376,9 @@ function FullScreenControl(map) {
                 radius: settings.radius,
                 locationName: settings.locationName,
                 settings: settings,
-                draggable: settings.draggable
+                draggable: settings.draggable,
+                markerTitle: settings.markerTitle,
+                markerDraggable: settings.markerDraggable
             });
             $target.data("locationpicker", gmapContext);
             // Subscribe GMap events
