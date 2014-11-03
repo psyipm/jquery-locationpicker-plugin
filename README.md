@@ -35,6 +35,7 @@ Available options
         location: {latitude: 40.7324319, longitude: -73.82480799999996},
         locationName: "",
         radius: 500,
+        radiusMultiplication: 1,
         zoom: 15,
         scrollwheel: true,
         inputBinding: {
